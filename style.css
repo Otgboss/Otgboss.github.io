@@ -135,8 +135,10 @@ to {
     transform: scale(1.05);
 }
 .blog {
+    border: 5px solid yellow;
     padding: 40px 20px;
-    background-color: black !important;
+    background-color: white !important;
+    color: black !important;
     text-align: center;
 }
 .blog h2{
@@ -151,7 +153,8 @@ to {
     flex-wrap: wrap;
 }
 .blog-post {
-    background-color: black;
+    background-color: white!important;
+    color: black !important;
     border-radius: 10px;
     overflow: hidden;
     max-width: 300px;
@@ -191,5 +194,11 @@ to {
 }
 .blog-post:hover{
     transform: scale(1.03);
+}
+/*Optional: Targets headings & paragraphs directly*/
+.blog h2,
+.blog  h3,
+.blog p {
+    color: black !important;
 }
 }
