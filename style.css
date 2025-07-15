@@ -201,4 +201,9 @@ to {
 .blog p {
     color: black !important;
 }
+.blog,
+.blog *{
+    background-color: white !important;
+    color: black !important;
+}
 }
