@@ -206,4 +206,14 @@ to {
     background-color: white !important;
     color: black !important;
 }
+.blog .blog-post {
+    background-color: white !important;
+    color: black !important;
+}
+.blog .blog-post h3{
+    color: black !important;
+}
+.blog .blog-post p{
+    color: black !important;
+}
 }
