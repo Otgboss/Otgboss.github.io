@@ -5,7 +5,7 @@ button.addEventListener("click",function (){
 });
 //Get the button
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-//Show the button when scrolling down
+if (scrollToTopBtn) {
 window.onscroll = function(){
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
         scrollToTopBtn.style.display = "block";
@@ -20,3 +20,4 @@ scrollToTopBtn.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
+}
