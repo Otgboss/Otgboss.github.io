@@ -20,7 +20,7 @@ p{
     color: black;
 img {
     margin-top: 20px;
-    border-radius: 12px;
+    border-radius: 8px;
     max-width: 50px;
     height: auto;
     display: block;
@@ -57,7 +57,7 @@ button:hover {
 /*Base logo styles (for desktop)*/
 .logo {
     width: 50px;
-    max-width: 400%;
+    max-width: 50px;
     height: auto;
     display: block;
     border-radius: 12px;
@@ -181,7 +181,7 @@ to {
     height: auto; /*keeps proportions */
     display: block;
     margin: 20px auto; /*centers them*/
-    border-radius: 12px; /*optional smooth Apple-like corners*/
+    border-radius: 8px; /*optional smooth Apple-like corners*/
 }
 .blog-post h3 {
     font-family: 'Playfair Display', serif;
