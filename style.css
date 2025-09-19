@@ -17,6 +17,13 @@ p{
 img {
     margin-top: 20px;
     border-radius: 12px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /*centers images*/
+}
+.section img {
+    max-width: 600px; /*adjust this depending on how big you want*/
 }
 form {
     max-width: 400px;
