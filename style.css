@@ -173,10 +173,14 @@ to {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
 }
-.blog-post img {
-    width: 100%;
-    height: auto;
+.blog-post img,
+.gallery,
+.logo {
+    max-width: 400%; /*keeps them from being too wide*/
+    height: auto; /*keeps proportions */
     display: block;
+    margin: 20px auto; /*centers them*/
+    border-radius: 12px; /*optional smooth Apple-like corners*/
 }
 .blog-post h3 {
     font-family: 'Playfair Display', serif;
