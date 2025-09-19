@@ -21,10 +21,10 @@ p{
 img {
     margin-top: 20px;
     border-radius: 12px;
-    max-width: 100%;
+    max-width: 400%;
     height: auto;
     display: block;
-    margin: 0 auto; /*centers images*/
+    margin: 20px auto; /*centers images*/
 }
 .section img {
     max-width: 600px; /*adjust this depending on how big you want*/
@@ -57,9 +57,10 @@ button:hover {
 /*Base logo styles (for desktop)*/
 .logo {
     width: 200px;
-    max-width: 100%;
+    max-width: 400%;
     height: auto;
     display: block;
+    border-radius: 12px;
 }
 }
 /*Responsive Design*/
