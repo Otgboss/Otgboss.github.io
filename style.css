@@ -182,6 +182,12 @@ to {
     margin: 20px auto; /*centers them*/
     border-radius: 10px; /*optional smooth Apple-like corners*/
 }
+.logo img {
+    max-width: 50;
+    border-radius: 8px;
+    height: auto;
+    display: block;
+}
 .blog-post h3 {
     font-family: 'Playfair Display', serif;
     font-size: 20px;
