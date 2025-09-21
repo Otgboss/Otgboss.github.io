@@ -26,7 +26,7 @@ img {
     display: block;
     margin: 20px auto; /*centers images*/
 }
-.section img {
+.section img:not(.logo) {
     max-width: 150px; /*adjust this depending on how big you want*/
 }
 form {
