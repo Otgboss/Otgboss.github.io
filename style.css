@@ -21,13 +21,13 @@ p{
 img {
     margin-top: 20px;
     border-radius: 8px;
-    max-width: 50px;
+    max-width: 150px;
     height: auto;
     display: block;
     margin: 20px auto; /*centers images*/
 }
 .section img {
-    max-width: 50px; /*adjust this depending on how big you want*/
+    max-width: 150px; /*adjust this depending on how big you want*/
 }
 form {
     max-width: 400px;
@@ -56,8 +56,8 @@ button:hover {
 }
 /*Base logo styles (for desktop)*/
 .logo {
-    width: 50px;
-    max-width: 50px;
+    width: 50px !important;
+    max-width: 50px !important;
     height: auto;
     display: block;
     border-radius: 8px;
