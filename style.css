@@ -175,13 +175,12 @@ to {
     transition: transform 0.3s ease;
 }
 .blog-post img,
-.gallery,
-.logo {
-    max-width: 50px; /*keeps them from being too wide*/
+.gallery {
+    max-width: 150px; /*keeps them from being too wide*/
     height: auto; /*keeps proportions */
     display: block;
     margin: 20px auto; /*centers them*/
-    border-radius: 8px; /*optional smooth Apple-like corners*/
+    border-radius: 10px; /*optional smooth Apple-like corners*/
 }
 .blog-post h3 {
     font-family: 'Playfair Display', serif;
