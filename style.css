@@ -21,7 +21,7 @@ p{
 img {
     margin-top: 20px;
     border-radius: 8px;
-    max-width: 150px;
+    max-width: 50px;
     height: auto;
     display: block;
     margin: 20px auto; /*centers images*/
@@ -55,7 +55,7 @@ button:hover {
     transform: scale(1.05);
 }
 /*Base logo styles (for desktop)*/
-.logo {
+img.logo {
     width: 50px !important;
     max-width: 50px !important;
     height: auto;
@@ -182,7 +182,7 @@ to {
     margin: 20px auto; /*centers them*/
     border-radius: 10px; /*optional smooth Apple-like corners*/
 }
-.logo img {
+.logo{
     max-width: 50;
     border-radius: 8px;
     height: auto;
