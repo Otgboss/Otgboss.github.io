@@ -27,7 +27,7 @@ img {
     margin: 20px auto; /*centers images*/
 }
 .section img {
-    max-width: 600px; /*adjust this depending on how big you want*/
+    max-width: 50px; /*adjust this depending on how big you want*/
 }
 form {
     max-width: 400px;
@@ -175,7 +175,7 @@ to {
     transition: transform 0.3s ease;
 }
 .blog-post img,
-.gallery {
+.gallery img {
     max-width: 150px; /*keeps them from being too wide*/
     height: auto; /*keeps proportions */
     display: block;
