@@ -55,7 +55,7 @@ button:hover {
     transform: scale(1.05);
 }
 /*Base logo styles (for desktop)*/
-img.logo {
+.logo {
     width: 50px !important;
     max-width: 50px !important;
     height: auto;
@@ -182,11 +182,8 @@ to {
     margin: 20px auto; /*centers them*/
     border-radius: 10px; /*optional smooth Apple-like corners*/
 }
-.logo{
-    max-width: 50px !important;
-    border-radius: 8px !important;
-    height: auto;
-    display: block;
+.logo {
+    width: 40px;
 }
 .blog-post h3 {
     font-family: 'Playfair Display', serif;
