@@ -478,4 +478,18 @@ html {
 #scrollToTopBtn:hover {
     background-color: #555;
 }
+:root {
+    --big-color: #ffffff;
+    --text-color: #000000;
+}
+body {
+    background-color: var(--big-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+/*Dark mode variables*/
+body.dark-mode{
+    --bg-color: #121212;
+    --text-color: #ffffff;
+}
 }

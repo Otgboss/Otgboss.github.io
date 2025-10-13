@@ -17,3 +17,14 @@ scrollToTopBtn.addEventListener("click", function () {
     window.scrollTo({
         top: 0, behavior: "smooth"});
 });
+const toggleButton= document.getElementById('theme-toggle');
+const body=document.body;
+toggleButton.addEventListener('click', ()=>{
+    body.classList.toggle('dark-mode');
+    //change button text based on theme
+    if(body.classList.contains('dark-mode')){
+        toggleButton.textContent='Light Mode';
+    } else {
+        toggleButton.textContent='Dark Mode';
+    }
+});
