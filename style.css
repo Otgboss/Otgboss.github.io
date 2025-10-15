@@ -122,19 +122,19 @@ button:hover {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.3rem;
     margin-bottom: 10px;
-    color: #000;
+    color: var(--text-color);
 }
 .blog-post p {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
     margin: 0 15px 15px;
-    color: brown;
+    color: var(--text-color);
 }
 .blog-post a {
     display: inline-block;
     margin: 0 15px 15px;
-    color: black;
-    background: #000;
+    color: var(--text-color);
+    background: var(--bg-color);
     padding: 8px 15px;
     border-radius: 5px;
     text-decoration: none;
@@ -152,35 +152,35 @@ button:hover {
 .blog h2,
 .blog  h3,
 .blog p {
-    color: black !important;
+    color: var(--text-color);
 }
 .blog,
 .blog *{
-    background-color: white !important;
-    color: black !important;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 .blog .blog-post {
-    background-color: white !important;
-    color: black !important;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 .blog .blog-post h3{
-    color: black !important;
+    color: var(--text-color);
 }
 .blog .blog-post p{
-    color: black !important;
+    color: var(--text-color);
 }
 /*Typography Styles*/
 body {
     font-family: 'Lora' serif;
-    color: #000;
-    background-color: #fff;
+    color: var(--text-color);
+    background-color: var(--bg-color);
     line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
-    color: #111;
+    color: var(--text-color);
     margin-bottom: 10px;
 }
 p {
@@ -189,15 +189,15 @@ p {
 }
 a {
     text-decoration: none;
-    color: #333;
+    color:var(--text-color);
     font-weight: bold;
 }
 a:hover {
     color: #555
 }
 footer {
-    background-color: #f4f5;
-    color: #fff;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     text-align: center;
     padding: 15px 0;
     margin-top: 30px;
@@ -229,8 +229,8 @@ html {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: violet;
-    color: white;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     cursor: pointer;
     padding: 12px 16px;
     border-radius: 50%;
@@ -238,7 +238,7 @@ html {
     transition: background-color 0.3s ease;
 }
 #scrollToTopBtn:hover {
-    background-color: #555;
+    background-color: var(--bg-color);
 }
 }
 /*Responsive Design*/
