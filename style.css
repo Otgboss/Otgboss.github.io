@@ -32,7 +32,7 @@ section {
 }
 p{
     font-size: 1.2em;
-    color: black;
+    color: var(--text-color);
 img {
     margin-top: 20px;
     border-radius: 8px;
@@ -146,7 +146,7 @@ button:hover {
     font-family: 'Lora', serif;
 }
 .blog-post a:hover {
-    background: #444;
+    background: var(--bg-color);
 }
 .blog-post:hover{
     transform: translateY(-5px);
@@ -197,7 +197,7 @@ a {
     font-weight: bold;
 }
 a:hover {
-    color: #555
+    color: var(--text-color)
 }
 footer {
     background-color: var(--bg-color);
