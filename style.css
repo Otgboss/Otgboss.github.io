@@ -1,6 +1,6 @@
 :root {
-    --bg-color: #ffffff;
-    --text-color: #000000;
+    --bg-color: indigo;
+    --text-color: grey;
 }
 body {
     background-color: var(--bg-color);
