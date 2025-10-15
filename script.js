@@ -1,7 +1,7 @@
 console.log("OTG is live");
 const button = document.getElementById("join-btn");
 button.addEventListener("click",function (){
-    alert("Welcome to OTG. Omni-Task Ghakime!");
+    alert("Welcome to OTG. Ghakime");
 });
 //Get the button
 let scrollToTopBtn = document.getElementById("scrollToTopBtn");
