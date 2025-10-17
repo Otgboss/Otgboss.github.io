@@ -21,7 +21,7 @@ body {
     margin: 0;
 }
 .navbar li{
-    position: relative;
+    display: inline;
 }
 .navbar a{
     text-decoration: none;
@@ -322,9 +322,6 @@ html {
 #theme-toggle:hover {
     background-color: var(--text-color);
     color: var(--bg-color);
-}
-.navbar {
-    border: 2px solid red;
 }
 /*Responsive Design*/
 @media (max-width: 768px){
