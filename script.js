@@ -23,8 +23,8 @@ toggleButton.addEventListener('click', ()=>{
     body.classList.toggle('dark-mode');
     //change button text based on theme
     if(body.classList.contains('dark-mode')){
-        toggleButton.textContent='Light Mode';
+        toggleButton.textContent='🌞 Light Mode';
        } else {
-        toggleButton.textContent='Dark Mode';
+        toggleButton.textContent='🌙 Dark Mode';
        }
 });
