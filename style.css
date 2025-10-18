@@ -235,17 +235,18 @@ html {
     border: none;
     outline: none;
     background-color: var(--bg-color);
-    color: var(--text-color);
+    color: blue;
     cursor: pointer;
-    padding: 12px;
-    border-radius: 50%;
-    font-size: 24px;
+    padding: 15px 20px;
+    border-radius: 6px;
+    font-size: 14px;
     transition: background-color 0.3s ease;
     justify-content: center;
     align-items: center;
 }
 #scrollToTopBtn:hover {
     background-color: var(--bg-color);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
 /*Theme Toggle Button*/
 #theme-toggle {
