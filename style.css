@@ -225,25 +225,27 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+}
 #scrollToTopBtn {
     display: none; /*Hidden by default*/
     position: fixed;
-    bottom: 40px;
-    right: 40px;
+    bottom: 20px;
+    right: 20px;
     z-index: 99;
     border: none;
     outline: none;
     background-color: var(--bg-color);
     color: var(--text-color);
     cursor: pointer;
-    padding: 12px 16px;
+    padding: 12px;
     border-radius: 50%;
-    font-size: 18px;
+    font-size: 24px;
     transition: background-color 0.3s ease;
+    justify-content: center;
+    align-items: center;
 }
 #scrollToTopBtn:hover {
     background-color: var(--bg-color);
-}
 }
 /*Theme Toggle Button*/
 #theme-toggle {
