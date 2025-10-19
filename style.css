@@ -323,6 +323,9 @@ html {
     background-color: var(--text-color);
     color: var(--bg-color);
 }
+.navbar {
+    border: 2px solid red;
+}
 /*Responsive Design*/
 @media (max-width: 768px){
     body{
