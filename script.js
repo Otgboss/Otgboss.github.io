@@ -28,3 +28,15 @@ toggleButton.addEventListener('click', ()=>{
         toggleButton.textContent='🌙';
        }
 });
+document.querySelectorAll(".dropbtn").forEach(button => {
+    button.addEventListener("click", function(e){
+        e.preventDefault(); this.nextElementSibling.classList.toggle("show");
+    });
+});
+//Close dropdown if you click outside
+window.addEventListener("click", function(e){
+    if(!e.target.matches(".dropbtn")){document.querySelectorAll(".dropdown-content").forEach(menu =>{
+        menu.classList.remove("show");
+    });
+    }
+});

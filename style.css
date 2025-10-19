@@ -11,6 +11,56 @@ body {
     color: var(--text-color);
     transition: background-color 0.3s, color 0.3s;
 }
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    background-color: var(--bg-color);
+    padding: 15px 30px;
+    margin: 0;
+}
+.navbar li{
+    position: relative;
+}
+.navbar a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+.navbar a:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border-radius: 5px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--bg-color);
+    min-width: 160px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 1000;
+}
+.dropdown-content li a {
+    display: block;
+    padding: 10px;
+    color: var(--text-color)
+}
+.dropdown-content li a:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content.show {
+    display: block;
+}
 body {background-color: var(--bg-color);
       color: var(--text-color);
       transition: background-color 0.3s, color 0.3s;
