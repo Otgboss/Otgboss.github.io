@@ -9,7 +9,7 @@ window.onscroll = function(){
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
         scrollToTopBtn.style.display = "block";
     } else{
-        scrollToTopBtn.style.display = "none";
+        scrollToTopBtn.style.display = "none"; 
     }
 };
 //Scroll to top when clicked
