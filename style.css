@@ -1,10 +1,12 @@
 :root {
     --bg-color: #ffffff;
     --text-color: #000000;
+    --accent-color: #ff6600;
 }
 body.dark-mode {
     --bg-color: #121212;
     --text-color: #ffffff;
+    --accent-color: #ff6600;
 }
 body {
     background-color: var(--bg-color);
@@ -12,23 +14,26 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 .navbar {
+    background-color: #222;
+    padding: 10px 0;
+}
+.navbar ul{
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 30px;
-    background-color: var(--bg-color);
-    padding: 15px 0px;
+    gap: 40px;
     margin: 0;
+    padding: 0;
 }
 .navbar li{
-    display: inline;
+    position: relative;
 }
 .navbar a{
     text-decoration: none;
-    color: var(--text-color);
-    font-weight: 600;
+    color: var(--bg-color);
+    font-weight: bold;
     padding: 8px 12px;
-    transition: 0.3s;
+    transition: background 0.3s;
 }
 .navbar a:hover {
     background-color: var(--text-color);
@@ -41,6 +46,8 @@ body {
     top: 100%;
     left: 0;
     background-color: var(--bg-color);
+    list-style: none;
+    padding: 0;
     min-width: 160px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
