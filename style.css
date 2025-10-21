@@ -14,7 +14,7 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 .navbar {
-    background-color: var(--text-color);
+    background-color: var(--bg-color);
     padding: 10px 0;
 }
 .navbar ul{
@@ -30,13 +30,13 @@ body {
 }
 .navbar a{
     text-decoration: none;
-    color: var(--bg-color);
+    color: var(--text-color);
     font-weight: bold;
     padding: 8px 12px;
     transition: background 0.3s;
 }
 .navbar a:hover {
-    background-color: var(--text-color);
+    background-color: var(--accent-color);
     color: var(--bg-color);
     border-radius: 5px;
 }
