@@ -28,15 +28,22 @@ toggleButton.addEventListener('click', ()=>{
         toggleButton.textContent='🌙';
        }
 });
-document.querySelectorAll(".dropbtn").forEach(button => {
-    button.addEventListener("click", function(e){
-        e.preventDefault(); this.nextElementSibling.classList.toggle("show");
+document.addEventListener('click', (event)=> {
+    const toggles = document.querySelectorAll('.dropdown-toggle');
+    const dropdowns = document.querySelectorAll('.dropdown-content');
+    let clickedInsideDropdown = false;
+    toggles.forEach((toggle, i)=>{const menu = dropdowns[i];
+        if (toggle.contains(event.target)) {event.preventDefault();
+            menu.classList.toggle('show');
+            clickedInsideDropdown = true;
+        } else {
+            menu.classList.remove('show');
+        }
     });
-});
-//Close dropdown if you click outside
-window.addEventListener("click", function(e){
-    if(!e.target.matches(".dropbtn")){document.querySelectorAll(".dropdown-content").forEach(menu =>{
-        menu.classList.remove("show");
+    dropdowns.forEach(menu=> {
+        if (menu.contains(event.target))clickedInsideDropdown=true;
     });
+    if (!clickedInsideDropdown) {
+        dropdowns.forEach(menu => menu.classList.remove('show'));
     }
 });
