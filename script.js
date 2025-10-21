@@ -29,10 +29,8 @@ toggleButton.addEventListener('click', ()=>{
        }
 });
 document.addEventListener('click', (event)=> {
-    const toggles = document.querySelectorAll('.dropdown-toggle');
-    const dropdowns = document.querySelectorAll('.dropdown-content');
-    let clickedInsideDropdown = false;
-    toggles.forEach((toggle, i)=>{const menu = dropdowns[i];
+    const toggle = document.querySelector('.dropdown-toggle');
+    const menu = document.querySelector('.dropdown-content');
         if (toggle.contains(event.target)) {event.preventDefault();
             menu.classList.toggle('show');
             clickedInsideDropdown = true;
@@ -40,10 +38,3 @@ document.addEventListener('click', (event)=> {
             menu.classList.remove('show');
         }
     });
-    dropdowns.forEach(menu=> {
-        if (menu.contains(event.target))clickedInsideDropdown=true;
-    });
-    if (!clickedInsideDropdown) {
-        dropdowns.forEach(menu => menu.classList.remove('show'));
-    }
-});

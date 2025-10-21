@@ -40,6 +40,12 @@ body {
     color: var(--bg-color);
     border-radius: 5px;
 }
+.dropdown {
+    position: relative;
+}
+.dropdown-toggle {
+    cursor: pointer;
+}
 .dropdown-content {
     display: none;
     position: absolute;
@@ -56,7 +62,7 @@ body {
 }
 .dropdown-content li a {
     display: block;
-    padding: 10px;
+    padding: 10px 15px;
     color: var(--text-color)
 }
 .dropdown-content li a:hover {
