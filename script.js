@@ -28,13 +28,17 @@ toggleButton.addEventListener('click', ()=>{
         toggleButton.textContent='🌙';
        }
 });
-document.addEventListener('click', (event)=> {
-    const toggle = document.querySelector('.dropdown-toggle');
-    const menu = document.querySelector('.dropdown-content');
-        if (toggle.contains(event.target)) {event.preventDefault();
-            menu.classList.toggle('show');
-            clickedInsideDropdown = true;
-        } else {
-            menu.classList.remove('show');
-        }
+document.querySelectorAll(".dropbtn").forEach(button =>{
+    button.addEventListener("click",function(e){
+        e.preventDefault();
+this.nextElementSibling.classList.toggle("show");
     });
+});
+//Close dropdown if you click outside
+window.addEventListener("click",function(e){
+    if(!e.target.matches(".dropbtn")) {
+document.querySelectorAll(".dropdown-content").forEach(menu =>{
+    menu.classList.remove("show");
+        });
+    }
+});
