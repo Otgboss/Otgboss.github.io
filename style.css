@@ -13,10 +13,16 @@ body {
     color: var(--text-color);
     transition: background-color 0.3s, color 0.3s;
 }
+nav {
+    background-color: var(--bg-color);
+    padding: 10px 0;
+}
 .navbar {
     list-style: none;
     display: flex;
-    gap: 20px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 8px;
     background-color: var(--bg-color);
     padding: 15px 30px;
     margin: 0;
@@ -50,9 +56,9 @@ body {
     background-color: var(--bg-color);
     list-style: none;
     padding: 0;
-    min-width: 160px;
+    min-width: 150px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 6px;
+    border-radius: 5px;
     overflow: hidden;
     z-index: 1000;
 }
@@ -70,6 +76,59 @@ body {
 }
 .dropdown-content.show {
     display: block;
+}
+.shop-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+.shop-section h2{
+    font-size:  2em;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax(220px,1fr));
+    gap: 10px;
+    justify-content: center;
+}
+.product-card{
+    background-color: var(--bg-color);
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.product-card img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.product-card h3{
+    margin: 10px 0;
+    color: var(--text-color);
+}
+.product-card .price{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.add-to-cart {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.add-to-cart:hover {
+    background-color: #e63946;
 }
 body {background-color: var(--bg-color);
       color: var(--text-color);
@@ -289,13 +348,13 @@ html {
 #scrollToTopBtn {
     display: none; /*Hidden by default*/
     position: fixed;
-    bottom: 20px;
+    bottom: 80px;
     right: 20px;
-    z-index: 99;
+    z-index: 1000;
     border: none;
     outline: none;
-    background-color: var(--bg-color);
-    color: blue;
+    background-color: var(--accent-color);
+    color: red;
     cursor: pointer;
     padding: 15px 20px;
     border-radius: 6px;
@@ -331,6 +390,60 @@ html {
 #theme-toggle:hover {
     background-color: var(--text-color);
     color: var(--bg-color);
+}
+/*Contact Form Styling*/
+.contact-form {
+    max-width: 500px;
+    margin: 80px auto;
+    padding: 30px;
+    background: var(--bg-color);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+.contact-form h1 {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    background-color: transparent;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 6px var(--accent-color);
+}
+.contact-form button{
+    width: 100%;
+    padding: 12px;
+    background-color: var(--accent-color);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.contact-form button:hover {
+    background-color: #333;
+}
+.contact-form a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+    color: var(--accent-color);
 }
 /*Responsive Design*/
 @media (max-width: 768px){

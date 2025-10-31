@@ -4,14 +4,23 @@ button.addEventListener("click",function (){
     alert("Welcome to OTG. Ghakime");
 });
 //Get the button
-let scrollToTopBtn = document.getElementById("scrollToTopBtn");
-window.onscroll = function(){
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
-        scrollToTopBtn.style.display = "block";
-    } else{
-        scrollToTopBtn.style.display = "none"; 
+const scrollBtn = document.getElementById("scrollToTopBtn");
+const footer = document.querySelector("footer");
+//show/hide when scrolling
+window,addEventListener("scroll", ()=> {
+    if (window.scrollY > 300) {
+        scrollBtn.style.display = "block";
+    } else {
+        scrollBtn.style.display = "none";
     }
-};
+    //check if near footer
+    const footerRect = footer.getBoundingClientRect();
+    if (footerRect.top <window.innerHeight-80){
+        scrollBtn.style.opacity="0"; //fade out near footer
+    } else {
+        scrollBtn.style.opacity="1"; //visible otherwise
+    }
+});
 //Scroll to top when clicked
 scrollToTopBtn.addEventListener("click", function () {
     window.scrollTo({
