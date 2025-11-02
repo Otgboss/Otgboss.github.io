@@ -24,6 +24,7 @@ nav {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: nowrap;
+    position: relative;
     justify-content: center;
     gap: 8px;
     background-color: var(--bg-color);
@@ -31,7 +32,7 @@ nav {
     margin: 0;
     overflow-x: auto;
     scrollbar-width: none;
-    z-index: 1000;
+    z-index: 10;
 }
 .navbar::-webkit-scrollbar{
     display: none;
@@ -70,7 +71,7 @@ nav {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     overflow: hidden;
-    z-index: 9999;
+    z-index: 999;
 }
 .dropdown-content li a {
     display: block;
