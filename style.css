@@ -33,6 +33,7 @@ nav {
     gap: 8px;
     background-color: var(--bg-color);
     padding: 15px 0px;
+    overflow-y: visible;
     margin: 0;
     overflow-x: auto;
     scrollbar-width: none;
