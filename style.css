@@ -28,7 +28,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100;
+    width: 100%;
     justify-content: center;
     gap: 8px;
     background-color: var(--bg-color);
@@ -76,7 +76,7 @@ nav {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     overflow: hidden;
-    z-index: 999;
+    z-index: 2000;
 }
 .dropdown-content li a {
     display: block;
