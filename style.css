@@ -597,6 +597,42 @@ lightbox {
     from {opacity: 0;}
     to {opacity: 1;}
 }
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.reveal-left {
+    transform: translateX(-70px);
+}
+.reveal-right {
+    transform: translateX(70px);
+}
+.reveal-fade {
+    transform: translateY(50px);
+}
+.reveal-up {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+.reveal-up.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+.reveal-down {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+.reveal-down.active {
+    transform: translateY(0);
+    opacity: 1;
+}
 /*Responsive Design*/
 @media (max-width: 768px){
     body{
