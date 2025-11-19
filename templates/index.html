@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OTG FELIX</title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+        <meta name="viewport"
+    content="width=device-width,initial-scale=1.0">
+         <link
+    href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+         <link rel="stylesheet"
+    href="{{ url_for('static',filename='css/style.css')}}">
+        <button id="theme-toggle">🌙</button>
+    </head>
+    <body>
+        <nav>
+            <ul class = "navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!--Dropdown example-->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Services▼</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">E-commerce</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <h1 class="fade-in">Welcome to OTG</h1>
+        <img src="{{ url_for('static', filename='images/OTG.V3.jpg.jpg') }}" alt="OTG Logo" class="logo">
+        <p>Ghakime. Built by Felix. Powered by discipline</p>
+        <a href="about.html">Learn more about OTG</a>
+        <a href="contact.html">Contact OTG</a>
+        <section class="hero reveal reveal-fade">
+          <h1>Welcome to OTG</h1>
+          <p>One True Ghakime. Build different</p>
+        <button id="join-btn">Join the Movement</button>
+        </section>
+        <section class="shop-section reveal reveal-right">
+            <h2>OTG Merch</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src=" {{ url_for('static', filename= 'images/pic4.jpg') }}" alt="OTG Products">
+                    <h3>OTG Products</h3>
+                    <p class="price">$43.75</p>
+                    <button class="add-to-cart">Add To Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="{{ url_for('static', filename= 'images/pic5.jpg') }}" alt="OTG products 2">
+                    <h3>OTG Products 2</h3>
+                    <p class="price">$54.66</p>
+                    <button class="add-to-cart">Add To Cart</button>
+                </div>
+            </div>
+        </section>
+        <section class="blog">
+          <h2>What OTG Is All About</h2>
+          <div class="blog-container">
+            <div class="blog-post reveal reveal-left">
+                <img src="{{ url_for('static', filename= 'images/otg1.jpg') }}"
+        alt="OTG Life">
+                <h3>One True Ghakime</h3>
+                <p>OTG isn't just a name - it's a code we live by. It means pushing through struggle, aiming for greatness and settling for less than what you're truly worth. It's about honour, strength and truth.</p>
+            </div>
+            <div class="blog-post reveal reveal-right">
+                <img src="{{ url_for('static', filename= 'images/otg2.jpg') }}"
+        alt="OTG Movement">
+                <h3>A Lifestyle, A Legacy</h3>
+                <p>OTG is a movement for those who dare to dream beyond limits. From the streets to success, it represents hustle, discipline and purpose.</p>
+            </div>
+            <div class="blog-post reveal reveal-fade">
+                <img src="{{ url_for('static', filename= 'images/otg3.jpg') }}"
+        alt="OTG Message">
+                <h3>More Than a Brand</h3>
+                <p>This ain't fast fashion. It's a lifestyle. It's you showing the world you're built for more. OTG is legacy, vision and fire in the name.</p>  
+                </div>
+          </div>
+        </section>
+        <section class="gallery reveal reveal-right">
+            <h2>Gallery</h2>
+            <div class="gallery-container">
+                <div class="gallery-item reveal reveal-left"><img src="{{ url_for('static', filename= 'images/pic1.jpg') }}"alt="OTG Project1"></div>
+                <div class="gallery-item reveal reveal-right"><img src="{{ url_for('static', filename= 'images/pic2.jpg') }}"alt="OTG Project 2"></div>               <p>Second Project</p>
+                <div class="gallery-item reveal reveal-up"><img src="{{ url_for('static', filename= 'images/pic3.jpg') }}"alt="OTG Project 3"></div>
+           </div>
+           <div id="lightbox" class="lightbox">
+                <span class="close">&times;</span>
+                <img class="lightbox-content" id="lightbox-img">
+           </div>
+        </section>
+        <footer>
+            <p>&copy; 2025 OTG Ghakime. All rights reserved.</p>
+            <div Class="socials">
+                <a href="#"><img src="icons/x.png" alt="Twitter" /></a>
+            </div>
+        </footer>
+        <button id="scrollToTopBtn">👆 Top</button>
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </body>
+</html>

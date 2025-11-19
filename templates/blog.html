@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devce-width, initial-scale=1.0">
+    <title>OTG Blog</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+        </ul>
+    </nav>
+    <section class="blog-section">
+        <h1>OTG Blog📰</h1>
+        <p class="blog-intro">Thoughts, updates &stories from the OTG grind.</p>
+        <div class="blog-container">
+            <div class="blog-card">
+                <img src=" {{ url_for('static', filename= 'imagespic6.jpg') }}" alt="Post Image">
+                <h2>The Journey Begins</h2>
+                <p>Every brand has a story-this is how OTG started and where it's headed...</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="blog-card">
+                <img src=" {{ url_for('static', filename= 'imagespic7.jpg') }}" alt="Post Image">
+                <h2>Building the OTG website</h2>
+                <p>Step by step we crafted OTG from code, design, and pure ambition...</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="blog-card">
+                <img src=" {{ url_for('static', filename= 'imagespic8.jpg') }}" alt="Post Image">
+                <h2>Consistency Over Hype</h2>
+                <p>Success ain't luck-It's daily effort,discipline, and the grind...</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
