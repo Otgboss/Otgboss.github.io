@@ -14,16 +14,16 @@
     <body>
         <nav>
             <ul class = "navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
                 <!--Dropdown example-->
                 <li class="dropdown">
                     <a href="#" class="dropbtn">Services▼</a>
                     <ul class="dropdown-content">
-                        <li><a href="#">Web Design</a></li>
-                        <li><a href="#">Development</a></li>
-                        <li><a href="#">E-commerce</a></li>
+                        <li><a href="{{ url_for('webdesign') }}">Web Design</a></li>
+                        <li><a href="{{ url_for('development') }}">Development</a></li>
+                        <li><a href="{{ url_for('ecommerce') }}">E-commerce</a></li>
                     </ul>
                 </li>
             </ul>
@@ -31,8 +31,8 @@
         <h1 class="fade-in">Welcome to OTG</h1>
         <img src="{{ url_for('static', filename='images/OTG.V3.jpg.jpg') }}" alt="OTG Logo" class="logo">
         <p>Ghakime. Built by Felix. Powered by discipline</p>
-        <a href="about.html">Learn more about OTG</a>
-        <a href="contact.html">Contact OTG</a>
+        <a href="{{ url_for('about') }}">Learn more about OTG</a>
+        <a href="{{ url_for('contact') }}">Contact OTG</a>
         <section class="hero reveal reveal-fade">
           <h1>Welcome to OTG</h1>
           <p>One True Ghakime. Build different</p>
