@@ -22,4 +22,6 @@ def development():
 def ecommerce():
     return render_template('ecommerce.html')
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
+import os
+app.secret_key = os.getenv("SECRET_KEY")
