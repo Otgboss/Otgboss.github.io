@@ -1,5 +1,6 @@
 from app import db
 from datetime import datetime, timezone
+from werkzeug.security import generate_password_hash, check_password_hash
 class ContactMessage(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False)
@@ -17,3 +18,7 @@ class User(db.Model):
     created_at = db.Column(db.DateTime,default=datetime.utcnow)
     def __repr__(self):
         return f'<User {self.username}>'
+    def set_password(self, raw_password):
+        self.password = generate_password_hash(raw_password)
+    def check_password_hash(self, raw_password):
+        return check_password_hash(self.password, raw_password)
